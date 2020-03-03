@@ -69,7 +69,7 @@ stages:
   displayName: 'Deploy to the dev environment'
   dependsOn: Build
   jobs:
-    - job: Provision
+  - job: Provision
     displayName: 'Provision Azure App Service'
     pool:
       vmImage: 'ubuntu-16.04'
